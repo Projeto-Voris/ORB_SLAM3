@@ -1,0 +1,2 @@
+Invoking command in '/Dev/ORB_SLAM3/ws/build/ros2_orbslam3': /usr/bin/cmake /Dev/ORB_SLAM3/ws/src/ros2_orbslam3 -DCMAKE_INSTALL_PREFIX=/Dev/ORB_SLAM3/ws/install/ros2_orbslam3
+Invoked command in '/Dev/ORB_SLAM3/ws/build/ros2_orbslam3' returned '1': /usr/bin/cmake /Dev/ORB_SLAM3/ws/src/ros2_orbslam3 -DCMAKE_INSTALL_PREFIX=/Dev/ORB_SLAM3/ws/install/ros2_orbslam3
