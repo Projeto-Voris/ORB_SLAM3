@@ -565,7 +565,7 @@ namespace ORB_SLAM3 {
             output << " ]" << endl;
 
             if(!settings.vPinHoleDistorsion2_.empty()){
-                output << "\t-Camera 1 distortion parameters: [ ";
+                output << "\t-Camera 2 distortion parameters: [ ";
                 for(float d : settings.vPinHoleDistorsion2_){
                     output << " " << d;
                 }
@@ -584,9 +584,9 @@ namespace ORB_SLAM3 {
             output << " ]" << endl;
         }
         else if(settings.bNeedToResize1_){
-            output << "\t-Camera 1 parameters after resize: [ ";
-            for(size_t i = 0; i < settings.calibration1_->size(); i++){
-                output << " " << settings.calibration1_->getParameter(i);
+            output << "\t-Camera 2 parameters after resize: [ ";
+            for(size_t i = 0; i < settings.calibration2_->size(); i++){
+                output << " " << settings.calibration2_->getParameter(i);
             }
             output << " ]" << endl;
 

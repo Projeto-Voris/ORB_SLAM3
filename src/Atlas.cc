@@ -117,6 +117,8 @@ GeometricCamera* Atlas::AddCamera(GeometricCamera* pCam)
     //Check if the camera already exists
     bool bAlreadyInMap = false;
     int index_cam = -1;
+    cout << "mvpCameras size: " << std::to_string(mvpCameras.size()) << endl;
+
     for(size_t i=0; i < mvpCameras.size(); ++i)
     {
         GeometricCamera* pCam_i = mvpCameras[i];
@@ -145,6 +147,7 @@ GeometricCamera* Atlas::AddCamera(GeometricCamera* pCam)
 
     if(bAlreadyInMap)
     {
+        cout << "Already in Map" << endl;
         return mvpCameras[index_cam];
     }
     else{
